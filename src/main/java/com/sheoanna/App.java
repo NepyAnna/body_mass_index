@@ -15,8 +15,11 @@ public final class App {
         System.out.println("--------------------------");
         System.out.println("                          ");
 
-       //Необхідні екземпляри
+        BmiView view = new BmiView();
+        Person defaultPerson = new Person(0, 0);
+        BmiModel model = new BmiModel(defaultPerson);
+        BmiController controller = new BmiController(model, view);
 
- //Запускаємо метод, який активує потік програми
+        controller.start();
     }
 }

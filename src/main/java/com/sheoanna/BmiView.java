@@ -3,9 +3,7 @@ package com.sheoanna;
 import java.util.Scanner;
 
 public class BmiView {
-
     private Scanner scanner = new Scanner(System.in);
-
     
     public double askWeight(){
         System.out.println("Enter your weight in kilograms ");
@@ -19,10 +17,7 @@ public class BmiView {
     }
     
     public void showResults(double bmi, String clasification){
-        //Devuelve el valor del bmi calculado
         System.out.printf("Your BMI is: %.2f\n\n", bmi);
-
-        //Devolver el rango/la clasificación en la tabla del BMI
         System.out.println("Your BMI is: " + clasification);
     }
 }
