@@ -27,13 +27,6 @@ Open the project folder in your preferred IDE, or navigate to the folder in a te
 3. Run the Tests
 Run the test files individually from your IDE.
 
-'''mermaid
-graph TD
-    Start[“Start”] --> InitializationByDefault["Initialization by default"]
-    InitializationByDefault --> StartController["Start Controller"]
-    StartController --> GettingInput["Ask weight, Ask Height"]
-    GettingInput --> SetPerson["Set Person instance with Inputs"]
-    SetPerson --> SetBmiModel["Set BmiModel"]
-    SetBmiModel --> CalculateBMI["Calculate BMI"]
-    CalculateBMI --> ClassifyBMI["Classify BMI result"]
+# Diagram
 
+![Diagram](images/bmi_calculator.png)
